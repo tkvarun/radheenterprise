@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Radhe Enterprises - Fire and safety solutions, equipment supply, installation, testing and maintenance in Mehsana, Gujarat.">
+<title>Radhe Enterprises | Fire & Safety Solutions</title>
+<style>
+:root{--red:#d71920;--red2:#a90f17;--ink:#111820;--muted:#667085;--light:#f5f6f8;--white:#fff;--line:#e6e8ec}
+*{box-sizing:border-box;margin:0;padding:0;scroll-behavior:smooth}
+body{font-family:Arial,Helvetica,sans-serif;color:var(--ink);line-height:1.6;background:#fff}
+a{color:inherit;text-decoration:none}
+.container{width:min(1160px,92%);margin:auto}
+header{position:sticky;top:0;z-index:20;background:#fff;border-bottom:1px solid var(--line);box-shadow:0 3px 18px #1111}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:20px;min-height:78px}
+.brand{display:flex;align-items:center;gap:12px;font-weight:900;letter-spacing:.5px}
+.brand-mark{width:48px;height:48px;border-radius:12px;background:var(--red);color:white;display:grid;place-items:center;font-size:29px;font-weight:900;clip-path:polygon(0 0,100% 0,100% 78%,50% 100%,0 78%)}
+.brand-name{font-size:23px;line-height:1.05}.brand-name span{display:block;color:var(--red);font-size:11px;letter-spacing:2px;margin-top:5px}
+nav{display:flex;gap:22px;align-items:center;flex-wrap:wrap}nav a{font-size:14px;font-weight:700}nav a:hover{color:var(--red)}
+.nav-cta,.btn{display:inline-flex;align-items:center;justify-content:center;padding:12px 19px;background:var(--red);color:white;border-radius:7px;font-weight:800;border:2px solid var(--red);transition:.2s;cursor:pointer}
+.nav-cta:hover,.btn:hover{background:var(--red2);border-color:var(--red2);transform:translateY(-1px)}
+.btn.outline{background:transparent;color:white;border-color:#ffffffa8}.btn.outline:hover{background:#fff;color:var(--red)}
+.hero{position:relative;overflow:hidden;color:#fff;background:linear-gradient(110deg,#10161c 0%,#1b2026 58%,#9f1117 58%,#d71920 100%)}
+.hero:after{content:"";position:absolute;width:390px;height:390px;border:65px solid #ffffff0d;border-radius:50%;right:-90px;top:-130px}
+.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center;padding:82px 0;position:relative;z-index:1}
+.eyebrow{color:#ffb9b9;font-size:13px;font-weight:900;letter-spacing:2px;text-transform:uppercase}
+h1{font-size:clamp(38px,5.3vw,68px);line-height:1.03;letter-spacing:-2px;margin:14px 0 20px}
+h1 em{font-style:normal;color:#ff4b51}
+.hero p{color:#e2e5e8;max-width:590px;font-size:17px;margin-bottom:27px}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap}
+.hero-art{min-height:330px;display:grid;place-items:center;position:relative}
+.shield{width:min(330px,80%);aspect-ratio:1;display:grid;place-items:center;border:2px solid #ffffff45;border-radius:35% 35% 44% 44%;background:linear-gradient(145deg,#ffffff16,#ffffff04);box-shadow:0 25px 80px #0005;transform:rotate(-4deg)}
+.shield-inner{transform:rotate(4deg);text-align:center}
+.shield .flame{font-size:112px;line-height:1;filter:drop-shadow(0 8px 10px #0005)}
+.shield strong{display:block;font-size:24px;letter-spacing:2px}
+.shield small{color:#ffd4d4;letter-spacing:2px;font-weight:bold}
+.stats{background:#fff;box-shadow:0 8px 35px #1018200d;position:relative;z-index:2;margin-top:-25px;border-radius:12px;display:grid;grid-template-columns:repeat(4,1fr);padding:23px;gap:12px}
+.stat{text-align:center;border-right:1px solid var(--line)}.stat:last-child{border:0}.stat b{display:block;color:var(--red);font-size:18px}.stat span{font-size:13px;color:var(--muted)}
+section{padding:78px 0;scroll-margin-top:82px}
+.section-head{text-align:center;max-width:720px;margin:0 auto 38px}.kicker{font-size:12px;color:var(--red);font-weight:900;letter-spacing:2px;text-transform:uppercase}.section-head h2{font-size:clamp(29px,3vw,42px);line-height:1.15;margin:9px 0 13px;letter-spacing:-1px}.section-head p{color:var(--muted)}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:center}
+.about-panel{background:var(--light);padding:34px;border-radius:16px;border-left:5px solid var(--red)}
+.about-panel .big-icon{font-size:52px;margin-bottom:12px}.about-panel h3{font-size:25px;margin-bottom:12px}.about-panel p{color:#4b5563}
+.checks{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:22px}.check{display:flex;gap:10px;align-items:flex-start;font-weight:700;font-size:14px}.check i{font-style:normal;background:#ffe5e5;color:var(--red);width:23px;height:23px;border-radius:50%;display:grid;place-items:center;flex-shrink:0}
+.gray{background:var(--light)}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{border:1px solid var(--line);border-radius:13px;overflow:hidden;background:white;transition:.25s}.card:hover{transform:translateY(-5px);box-shadow:0 15px 35px #10182013;border-color:#f0b1b3}
+.card-top{height:140px;background:linear-gradient(135deg,#fff0f0,#f8f8f8);display:grid;place-items:center;font-size:60px;border-bottom:1px solid var(--line)}
+.card-body{padding:21px}.card h3{font-size:18px;margin-bottom:8px}.card p{font-size:14px;color:var(--muted)}
+.pill{display:inline-block;margin-top:14px;color:var(--red);font-size:11px;font-weight:900;letter-spacing:.7px;text-transform:uppercase}
+.services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.service{padding:23px;border:1px solid var(--line);border-radius:12px;background:#fff;display:flex;gap:15px;align-items:flex-start}.service-icon{width:46px;height:46px;display:grid;place-items:center;background:#ffe8e8;border-radius:10px;font-size:24px;flex-shrink:0}.service h3{font-size:16px;margin-bottom:5px}.service p{font-size:13px;color:var(--muted)}
+.process{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.step{padding:25px 20px;border-radius:12px;background:#fff;border:1px solid var(--line)}.step b{font-size:12px;color:var(--red);letter-spacing:1px}.step h3{margin:8px 0;font-size:18px}.step p{color:var(--muted);font-size:13px}
+.contact-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:25px;align-items:stretch}
+.contact-info{background:#111820;color:white;border-radius:14px;padding:32px}.contact-info h3{font-size:26px;margin-bottom:12px}.contact-info>p{color:#c5cbd2;margin-bottom:25px}
+.contact-line{display:flex;gap:13px;margin:18px 0;align-items:flex-start}.contact-line .ico{background:#ffffff18;border-radius:8px;width:42px;height:42px;display:grid;place-items:center;font-size:20px;flex-shrink:0}.contact-line small{display:block;color:#b9c0c8;font-size:12px}.contact-line strong{overflow-wrap:anywhere}
+.contact-form{border:1px solid var(--line);border-radius:14px;padding:30px;background:white}.contact-form h3{font-size:24px;margin-bottom:6px}.contact-form>p{color:var(--muted);font-size:14px;margin-bottom:22px}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:15px}.field{display:flex;flex-direction:column;gap:6px}.field.full{grid-column:1/-1}.field label{font-size:13px;font-weight:800}.field input,.field select,.field textarea{width:100%;border:1px solid #d8dce2;border-radius:7px;padding:12px;font:inherit;background:#fff}.field textarea{min-height:115px;resize:vertical}.field input:focus,.field textarea:focus,.field select:focus{outline:2px solid #ffd1d2;border-color:var(--red)}
+.form-note{font-size:12px;color:var(--muted);margin-top:10px}
+.cta-band{background:var(--red);color:white;padding:42px 0}.cta-inner{display:flex;align-items:center;justify-content:space-between;gap:22px}.cta-inner h2{font-size:clamp(24px,3vw,34px);line-height:1.15}.cta-inner p{color:#ffe2e2;margin-top:8px}
+footer{background:#0b1015;color:#c4c9ce;padding:26px 0;font-size:13px}.footer-inner{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}.footer-brand{color:white;font-weight:900}.footer-brand span{color:#ff555b}
+@media(max-width:850px){nav{gap:12px}nav a{font-size:12px}.nav-cta{display:none}.hero-grid{grid-template-columns:1fr;padding:60px 0 55px}.hero-art{min-height:250px}.stats{grid-template-columns:repeat(2,1fr)}.stat:nth-child(2){border:0}.about-grid,.contact-grid{grid-template-columns:1fr}.cards{grid-template-columns:repeat(2,1fr)}.services-grid{grid-template-columns:repeat(2,1fr)}.process{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.nav{align-items:flex-start;padding:13px 0;flex-direction:column;gap:10px}.brand-name{font-size:20px}nav{width:100%;overflow-x:auto;flex-wrap:nowrap;padding:3px 0 8px}nav a{white-space:nowrap;font-size:12px}.hero-grid{padding:48px 0}.hero-art{min-height:220px}.shield .flame{font-size:82px}.shield strong{font-size:20px}.stats{padding:16px}.stat{border:0}.stat b{font-size:16px}section{padding:57px 0}.cards,.services-grid,.process{grid-template-columns:1fr}.checks{grid-template-columns:1fr}.form-grid{grid-template-columns:1fr}.field.full{grid-column:auto}.contact-form,.contact-info{padding:23px}.cta-inner{align-items:flex-start;flex-direction:column}}
+
+/* Motion and reveal effects */
+@keyframes fadeUp{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:translateY(0)}}
+@keyframes slowFloat{0%,100%{transform:rotate(-4deg) translateY(0)}50%{transform:rotate(-4deg) translateY(-12px)}}
+@keyframes flamePulse{0%,100%{filter:drop-shadow(0 8px 10px #0005) brightness(1)}50%{filter:drop-shadow(0 10px 22px #ff4b5170) brightness(1.12)}}
+@keyframes shine{0%{background-position:150% 0}100%{background-position:-150% 0}}
+.hero .eyebrow,.hero h1,.hero p,.hero-actions{animation:fadeUp .7s both}
+.hero h1{animation-delay:.1s}.hero p{animation-delay:.2s}.hero-actions{animation-delay:.3s}
+.shield{animation:slowFloat 5s ease-in-out infinite}
+.shield .flame{animation:flamePulse 2.8s ease-in-out infinite}
+.card,.service,.step,.about-panel,.stats{transition:transform .28s ease,box-shadow .28s ease,border-color .28s ease}
+.card-top{transition:transform .35s ease}
+.card:hover .card-top{transform:scale(1.04)}
+.card:hover .card-body h3,.service:hover h3{color:var(--red)}
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .65s ease,transform .65s ease}
+.reveal.is-visible{opacity:1;transform:translateY(0)}
+.nav-cta,.btn{background-image:linear-gradient(110deg,transparent 0%,#ffffff28 45%,transparent 60%);background-size:220% 100%;background-position:150% 0}
+.nav-cta:hover,.btn:hover{background-position:-150% 0}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}.reveal{opacity:1;transform:none}}
+
+</style>
+</head>
+<body>
+<header>
+  <div class="container nav">
+    <a class="brand" href="#home" aria-label="Radhe Enterprises home">
+      <div class="brand-mark">R</div>
+      <div class="brand-name">RADHE <span>ENTERPRISES · FIRE & SAFETY</span></div>
+    </a>
+    <nav aria-label="Main navigation">
+      <a href="#home">Home</a><a href="#about">About Us</a><a href="#equipment">Equipments</a><a href="#services">Services</a><a href="#contact">Contact Us</a>
+    </nav>
+    <a class="nav-cta" href="#contact">Get a Quote ↗</a>
+  </div>
+</header>
+
+<main>
+<section class="hero" id="home">
+  <div class="container hero-grid">
+    <div>
+      <div class="eyebrow">Fire protection · Installation · Maintenance</div>
+      <h1>Safety Today.<br><em>Security Tomorrow.</em></h1>
+      <p>Reliable fire and safety solutions for your building, business and workplace. From equipment supply to installation, testing and ongoing maintenance, Radhe Enterprises helps you prepare for the unexpected.</p>
+      <div class="hero-actions"><a class="btn" href="#services">Explore Our Services ↗</a><a class="btn outline" href="#contact">Talk to Our Team</a></div>
+    </div>
+    <div class="hero-art" aria-label="Fire safety protection illustration">
+      <div class="shield"><div class="shield-inner"><div class="flame">🔥</div><strong>FIRE SAFETY</strong><small>YOUR SAFETY · OUR PRIORITY</small></div></div>
+    </div>
+  </div>
+</section>
+
+<div class="container stats" aria-label="Our capabilities">
+  <div class="stat"><b>Supply</b><span>Fire safety equipment</span></div>
+  <div class="stat"><b>Installation</b><span>Professional system setup</span></div>
+  <div class="stat"><b>Testing</b><span>System testing & commissioning</span></div>
+  <div class="stat"><b>Service</b><span>Maintenance & support</span></div>
+</div>
+
+<section id="about">
+  <div class="container">
+    <div class="section-head"><div class="kicker">About Radhe Enterprises</div><h2>Protection built around your safety</h2><p>We provide fire and safety solutions designed to help sites prepare, respond and maintain essential protection systems.</p></div>
+    <div class="about-grid">
+      <div class="about-panel"><div class="big-icon">🧯</div><h3>Your Safety. Our Priority.</h3><p>Radhe Enterprises is based in Mehsana, Gujarat. Our work includes fire-fighting system installation, fire hydrant systems, wet and dry risers, annual maintenance, testing and consultation.</p></div>
+      <div><h3 style="font-size:25px;margin-bottom:10px">Why work with us?</h3><p style="color:var(--muted)">We focus on practical fire-safety support, clear communication and helping customers keep their safety equipment ready for use.</p>
+        <div class="checks"><div class="check"><i>✓</i><span>Equipment supply</span></div><div class="check"><i>✓</i><span>Installation support</span></div><div class="check"><i>✓</i><span>Testing & commissioning</span></div><div class="check"><i>✓</i><span>Maintenance services</span></div><div class="check"><i>✓</i><span>Fire-safety consultation</span></div><div class="check"><i>✓</i><span>Solutions for varied sites</span></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="gray" id="equipment">
+  <div class="container">
+    <div class="section-head"><div class="kicker">Our equipment</div><h2>Fire safety equipment we offer</h2><p>Explore common equipment categories. Availability, specifications and suitability can be confirmed for your project.</p></div>
+    <div class="cards">
+      <article class="card"><div class="card-top">🧯</div><div class="card-body"><h3>Fire Extinguishers</h3><p>Portable extinguisher options for different fire-risk environments, subject to site requirements.</p><span class="pill">Fire protection</span></div></article>
+      <article class="card"><div class="card-top">🚒</div><div class="card-body"><h3>Fire Hydrant Systems</h3><p>Hydrant system components and installation support for indoor and outdoor applications.</p><span class="pill">Water-based systems</span></div></article>
+      <article class="card"><div class="card-top">🌀</div><div class="card-body"><h3>Hose Reels & Hoses</h3><p>Fire hose reel options and related components for suitable building installations.</p><span class="pill">Fire-fighting equipment</span></div></article>
+      <article class="card"><div class="card-top">💧</div><div class="card-body"><h3>Sprinkler Systems</h3><p>Sprinkler system components and project installation support based on design needs.</p><span class="pill">Automatic protection</span></div></article>
+      <article class="card"><div class="card-top">🚨</div><div class="card-body"><h3>Fire Alarm & Detection</h3><p>Alarm and detection equipment options to help identify and alert occupants to a fire event.</p><span class="pill">Detection & alert</span></div></article>
+      <article class="card"><div class="card-top">🔦</div><div class="card-body"><h3>Emergency Lights & Signs</h3><p>Emergency lighting and safety signage to support evacuation and clear wayfinding.</p><span class="pill">Emergency readiness</span></div></article>
+      <article class="card"><div class="card-top">⚙️</div><div class="card-body"><h3>Fire Pumps & Fittings</h3><p>Fire pump, valves, fittings and accessories for fire-fighting system installations.</p><span class="pill">System components</span></div></article>
+      <article class="card"><div class="card-top">🧤</div><div class="card-body"><h3>Fire Suits & PPE</h3><p>Protective equipment categories such as helmets, gloves, boots and related gear.</p><span class="pill">Personal protection</span></div></article>
+      <article class="card"><div class="card-top">🚪</div><div class="card-body"><h3>Fire Cabinets & Doors</h3><p>Fire hose cabinets, accessories and fire-door options for suitable projects.</p><span class="pill">Building safety</span></div></article>
+    </div>
+  </div>
+</section>
+
+<section id="services">
+  <div class="container">
+    <div class="section-head"><div class="kicker">What we do</div><h2>Our services</h2><p>From planning and installation to ongoing care, we support your fire-safety system through key stages.</p></div>
+    <div class="services-grid">
+      <div class="service"><div class="service-icon">🚒</div><div><h3>Fire Hydrant System Installation</h3><p>Installation support for fire hydrant systems as per project requirements.</p></div></div>
+      <div class="service"><div class="service-icon">🏢</div><div><h3>Wet & Dry Riser Installation</h3><p>Riser system installation for applicable buildings and facilities.</p></div></div>
+      <div class="service"><div class="service-icon">🧯</div><div><h3>Fire-Fighting System Installation</h3><p>Equipment and system installation support for fire protection projects.</p></div></div>
+      <div class="service"><div class="service-icon">🛠️</div><div><h3>Annual Maintenance Contract (AMC)</h3><p>Planned maintenance support to help keep installed systems in serviceable condition.</p></div></div>
+      <div class="service"><div class="service-icon">✓</div><div><h3>System Testing & Commissioning</h3><p>Testing and commissioning support after installation or maintenance.</p></div></div>
+      <div class="service"><div class="service-icon">📋</div><div><h3>Fire Safety Consultation</h3><p>Discuss your site, equipment needs and fire-safety project requirements with our team.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="gray">
+  <div class="container">
+    <div class="section-head"><div class="kicker">How we work</div><h2>A straightforward process</h2><p>Tell us what your site needs and we’ll discuss the next steps with you.</p></div>
+    <div class="process">
+      <div class="step"><b>STEP 01</b><h3>Understand</h3><p>Share your site type, project scope and safety requirements.</p></div>
+      <div class="step"><b>STEP 02</b><h3>Recommend</h3><p>Discuss relevant equipment and service options for your project.</p></div>
+      <div class="step"><b>STEP 03</b><h3>Install & Test</h3><p>Coordinate installation, testing and commissioning where agreed.</p></div>
+      <div class="step"><b>STEP 04</b><h3>Maintain</h3><p>Ask about maintenance support and annual maintenance contracts.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="container">
+    <div class="section-head"><div class="kicker">Contact us</div><h2>Let’s discuss your fire-safety needs</h2><p>Contact Radhe Enterprises for equipment enquiries, installation, maintenance or consultation.</p></div>
+    <div class="contact-grid">
+      <div class="contact-info">
+        <h3>Get in touch</h3><p>Our team is based in Mehsana, Gujarat. Reach out to discuss your project or request a quotation.</p>
+        <div class="contact-line"><div class="ico">📞</div><div><small>Call us</small><strong><a href="tel:+919537978029">+91 95379 78029</a></strong><br><strong><a href="tel:+919978308145">+91 99783 08145</a></strong></div></div>
+        <div class="contact-line"><div class="ico">✉️</div><div><small>Email us</small><strong><a href="mailto:radhe.enterprise203@gmail.com">radhe.enterprise203@gmail.com</a></strong></div></div>
+        <div class="contact-line"><div class="ico">📍</div><div><small>Visit us</small><strong>Office No. 8, First Floor, Padmavati Complex, Near Mehsana Urban Bank, Mehsana, Gujarat – 384002</strong></div></div>
+        <div class="contact-line"><div class="ico">👤</div><div><small>Contact person</small><strong>Ritesh Patil</strong></div></div>
+      </div>
+      <div class="contact-form contact-details">
+        <h3>Contact Radhe Enterprises</h3>
+        <p>For product enquiries, installation, maintenance and fire-safety consultation, contact us directly.</p>
+        <div class="contact-line"><div class="ico" style="background:#ffe8e8;color:#d71920">📞</div><div><small>Call us</small><strong><a href="tel:+919537978029">+91 95379 78029</a></strong><br><strong><a href="tel:+919978308145">+91 99783 08145</a></strong></div></div>
+        <div class="contact-line"><div class="ico" style="background:#ffe8e8;color:#d71920">✉️</div><div><small>Email us</small><strong><a href="mailto:radhe.enterprise203@gmail.com">radhe.enterprise203@gmail.com</a></strong></div></div>
+        <div class="contact-line"><div class="ico" style="background:#ffe8e8;color:#d71920">📍</div><div><small>Office address</small><strong>Office No. 8, First Floor, Padmavati Complex, Near Mehsana Urban Bank, Mehsana, Gujarat – 384002</strong></div></div>
+        <div class="contact-line"><div class="ico" style="background:#ffe8e8;color:#d71920">👤</div><div><small>Contact person</small><strong>Ritesh Patil</strong></div></div>
+        <a class="btn" href="mailto:radhe.enterprise203@gmail.com?subject=Fire%20Safety%20Enquiry">Email Us ↗</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="cta-band"><div class="container cta-inner"><div><h2>Be Prepared. Stay Protected.</h2><p>Fire safety matters — let’s plan the right solution for your site.</p></div><a class="btn outline" href="tel:+919537978029">Call +91 95379 78029</a></div></div>
+</main>
+
+<footer><div class="container footer-inner"><div><div class="footer-brand">RADHE <span>ENTERPRISES</span></div><div>Fire & Safety Solutions · Mehsana, Gujarat</div></div><div>© <span id="year"></span> Radhe Enterprises. All rights reserved.</div><div><a href="#home">Back to top ↑</a></div></div></footer>
+<script>
+document.getElementById('year').textContent = new Date().getFullYear();
+// Reveal content as each section enters the viewport.
+const revealTargets = document.querySelectorAll('section .section-head, .about-grid > *, .card, .service, .step, .contact-info, .contact-details');
+revealTargets.forEach((el) => el.classList.add('reveal'));
+if ('IntersectionObserver' in window) {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('is-visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.12 });
+  revealTargets.forEach((el) => observer.observe(el));
+} else {
+  revealTargets.forEach((el) => el.classList.add('is-visible'));
+}
+</script>
+</body>
+</html>
